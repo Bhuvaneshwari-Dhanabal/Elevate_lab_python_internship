@@ -1,1 +1,126 @@
+To-Do List Application (Python)
+Project Overview
 
+The To-Do List Application is a console-based Python program that allows users to manage tasks efficiently.
+It supports adding tasks, viewing tasks, deleting tasks, and persists the data in a text file so tasks are saved even after closing the program.
+
+Features
+
+Add Task
+
+Users can enter a task description.
+
+The task is stored in a list in memory and also saved to tasks.txt.
+
+Provides a confirmation message:
+
+Task added ✅
+
+
+View Tasks
+
+Displays all tasks currently in memory.
+
+Each task is numbered for easy reference:
+
+Your Tasks:
+1. Study Python
+2. Do Homework
+
+
+Delete Task
+
+Users can delete a specific task by entering its number.
+
+The task is removed from the list and the text file is updated to reflect this deletion.
+
+Confirmation message example:
+
+Task 'Do Homework' deleted 🗑️
+
+
+Persistent Storage
+
+All tasks are stored in tasks.txt.
+
+On program start, the file is read to load previous tasks into the list.
+
+Ensures tasks are not lost when the program exits.
+
+How It Works
+
+Start Program
+
+Program opens tasks.txt (if it exists) and loads all tasks into a list.
+
+User Menu
+
+The program shows a simple menu:
+
+1. Add
+2. View
+3. Delete
+4. Exit
+
+
+The user chooses an option by entering the corresponding number.
+
+Add Task
+
+User inputs a new task.
+
+Task is appended to the list and saved to the file.
+
+View Tasks
+
+Displays all tasks with numbering.
+
+If no tasks exist, shows a message:
+
+No tasks yet!
+
+
+Delete Task
+
+Shows all tasks with numbering.
+
+User enters the number of the task to delete.
+
+Task is removed from the list and file.
+
+Exit
+
+Program stops. All tasks remain saved in the file.
+
+Sample Output
+Menu:
+1. Add
+2. View
+3. Delete
+4. Exit
+Enter choice: 1
+Enter task to add: Study Python
+Task added ✅
+
+Enter choice: 2
+Your Tasks:
+1. Study Python
+
+Enter choice: 3
+Your Tasks:
+1. Study Python
+Enter task number to delete: 1
+Task 'Study Python' deleted 🗑️
+
+Enter choice: 4
+Goodbye!
+
+Key Concepts Covered
+
+Python Lists – storing tasks in memory.
+
+File Handling – reading and writing tasks to tasks.txt.
+
+Loops & Conditional Statements – menu navigation and operations.
+
+Functions – modular code for add, view, delete.
